@@ -1,0 +1,36 @@
+# ===== 密钥与本地配置（绝不能提交）=====
+.env
+.env.local
+.env.*.local
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== 运行产物（可复现，不入库）=====
+outputs/
+*.log
+
+# evolution.jsonl 是运行流水，保留一份示例即可，实际产物不入库
+evolution.jsonl
+
+# ===== 报告 PDF（体积大且版权归属原公司，不入库）=====
+data/pdfs/*.pdf
+# 但合成样例要入库：评审下载仓库后没有真实报告，靠它就能验证整条流水线
+!data/pdfs/SAMPLE_43-101_ExampleGold.pdf
+!data/pdfs/.gitkeep
+
+# ===== 编辑器 =====
+.vscode/
+.idea/
+*.swp
+.DS_Store
+# ��ʱ�ύ��Ϣ�ļ�
+_commitmsg.txt
+_*.txt

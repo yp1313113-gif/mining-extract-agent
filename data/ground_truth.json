@@ -1,0 +1,74 @@
+{
+  "_说明": "Ground truth：以报告文件名（去 .pdf）为 key。数值字段单位统一为 tonnage_Mt / grade_value / contained_metal。某份报告若确实没有资源量表，rows 留空数组，评测会当作「应当 abstain」的用例。数值均由人工回读原 PDF 核对。",
+  "SAMPLE_43-101_ExampleGold": {
+    "project_name": "Example Project",
+    "source_url": "合成样例，仅用于流水线自测",
+    "rows": [
+      {
+        "category": "Indicated",
+        "tonnage_Mt": 123.4,
+        "grade_value": 1.23,
+        "grade_unit": "g/t Au",
+        "contained_metal": 4880,
+        "contained_unit": "koz"
+      },
+      {
+        "category": "Inferred",
+        "tonnage_Mt": 45.6,
+        "grade_value": 0.98,
+        "grade_unit": "g/t Au",
+        "contained_metal": 1440,
+        "contained_unit": "koz"
+      }
+    ]
+  },
+  "Carlin-TR-12312024": {
+    "project_name": "Carlin Complex",
+    "source_url": "Newmont Carlin Technical Report Summary, 2024-12-31",
+    "rows": [
+      {
+        "category": "Indicated",
+        "tonnage_Mt": 230,
+        "grade_value": 3.43,
+        "grade_unit": "g/t Au",
+        "contained_metal": 25,
+        "contained_unit": "Moz"
+      },
+      {
+        "category": "Inferred",
+        "tonnage_Mt": 78,
+        "grade_value": 3.7,
+        "grade_unit": "g/t Au",
+        "contained_metal": 9.3,
+        "contained_unit": "Moz"
+      }
+    ]
+  },
+  "Barrick_PuebloViejo_NI43-101_TechnicalReport_February2026": {
+    "project_name": "Pueblo Viejo",
+    "source_url": "Barrick Pueblo Viejo NI 43-101 Technical Report, February 2026",
+    "rows": [
+      {
+        "category": "Indicated",
+        "tonnage_Mt": 300,
+        "grade_value": 1.82,
+        "grade_unit": "g/t Au",
+        "contained_metal": 18,
+        "contained_unit": "Moz"
+      },
+      {
+        "category": "Inferred",
+        "tonnage_Mt": 16,
+        "grade_value": 1.5,
+        "grade_unit": "g/t Au",
+        "contained_metal": 0.77,
+        "contained_unit": "Moz"
+      }
+    ]
+  },
+  "Pilbara_Minerals-CP-11012022": {
+    "project_name": "（该文件为公告/合规说明，不含资源量表，应当 abstain）",
+    "source_url": "Pilbara Minerals",
+    "rows": []
+  }
+}

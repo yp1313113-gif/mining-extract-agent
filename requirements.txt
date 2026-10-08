@@ -1,0 +1,7 @@
+# 运行依赖
+openai>=1.0.0          # DeepSeek / Qwen / GLM 都是 OpenAI 兼容接口
+pymupdf>=1.24.0        # PDF 文本与版式解析
+python-dotenv>=1.0.0   # 读取 .env
+requests>=2.31.0
+tqdm>=4.66.0
+pandas>=2.0.0
